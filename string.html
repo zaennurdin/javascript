@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+let text = "John Doe";  // String written inside quotes
+let carName1 = "Volvo XC60";  // Double quotes
+let carName2 = 'Volvo XC70';  // Single quotes
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'"; //single quotes inside double quotes
+let answer3 = 'He is called "Johnny"'; //double quotes inside single quotes
+let temp =`He's often called "Johnny"`; //With back-ticks, you can use both single and double quotes inside a string
+let exam = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = exam.length; //length of the string
+let esc = "We are the so-called \"Vikings\" from the north."; //Escape Character
+let esc2 = "The character \\ is called backslash."; //Escape Character
+let esc3 = "It\'s alright."; //The escape sequence \' inserts a single quote in a string.
+document.getElementById("demo").innerHTML = //inside the paragraph js
+text + '<br>' + carName1 + '<br>' + carName2; // <br> is a line break
+document.getElementById("demo2").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3 + "<br>" + temp; //quotes inside quotes
+document.getElementById("demo3").innerHTML = temp; //Javascript Template String
+document.getElementById("demo4").innerHTML = length; //length of the string
+document.getElementById("demo5").innerHTML = esc + "<br>" + esc2 + "<br>" + esc3; //Escape Character
+</script>
+</body>
+</html
